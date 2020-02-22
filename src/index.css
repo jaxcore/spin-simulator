@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.SpinSimulator {
+  text-align: center;
+}
+
+#spinscanvas {
+  margin-left: -22px;
+}
+
+.arrows-info {
+  text-align: center;
+  line-height: 1.7em;
+  font-size: 10pt;
+}
+.arrows-info .arrow {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 11pt;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0 3px;
+}
