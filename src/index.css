@@ -17,6 +17,12 @@ code {
   text-align: center;
 }
 
+.spin-simulator {
+  margin: auto;
+  position:relative;
+  width: 360px;
+}
+
 #spinscanvas {
   margin-left: -22px;
 }
@@ -33,4 +39,17 @@ code {
   border: 1px solid black;
   border-radius: 4px;
   padding: 0 3px;
+
+}
+
+.led {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 1px;
+  position:absolute;
+  margin-top: -5px;
+  margin-left: -5px;
 }

@@ -127,6 +127,7 @@ class Spin extends Component {
 	};
 	
 	onRotate = (angle) => {
+		// console.log('onRotate', angle);
 		//if (!this.container) return;
 		this.container.rotation = angle;
 		this.drawKnob();
@@ -276,7 +277,7 @@ class Spin extends Component {
 		var deg = angle * 180 / Math.PI;
 		console.log('move angle', deltaAngle);
 
-		spin.rotate(deltaAngle);
+		spin.rotateKnob(deltaAngle);
 
 		//dragPoint.angle
 		var limit = 7;
@@ -610,7 +611,7 @@ class Spin extends Component {
 	
 	drawKnob() {
 		var knobFillColor = this.spin.state.knobPushed ? 0xF1F1F1 : 0xFDFDFD;
-		console.log('drawKnob', this.spin.state.knobPushed);
+		// console.log('drawKnob', this.spin.state.knobPushed);
 		// var knobFillColor = 0xFDFDFD;
 		// console.log('drawKnob', knobFillColor, spin);
 		var lineThickness = 2;
