@@ -12,8 +12,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && npm run copy",
-    "copy": "rm -rf ../jaxcore-desktop-server/public/simulator/* && cp -r build/* ../jaxcore-desktop-server/public/simulator/",
+    "build": "react-scripts build",
+    "copy": "rm -rf ../jaxcore-desktop-server/public/simulator && mv build simulator && mv simulator ../jaxcore-desktop-server/public/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

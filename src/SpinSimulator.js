@@ -67,6 +67,8 @@ class SpinSimulator extends Component {
 			ipcRenderer.send('simulator-begin');
 			
 			ipcRenderer.on('simulator-started', (event, id, instance) => {
+				debugger;
+				
 				this.id = id;
 				document.title = 'Jaxcore Spin Simulator '+instance;
 				window.addEventListener('beforeunload', (e) => {
@@ -74,6 +76,7 @@ class SpinSimulator extends Component {
 				});
 				
 				this.virtualSpin.on('spin', (diff, time) => {
+					console.log('spin', diff, time);
 					ipcRenderer.send('simulator-spin', this.id, this.virtualSpin.state.spinPosition);
 				});
 				this.virtualSpin.on('button', (pushed) => {
